@@ -1,5 +1,6 @@
+
 // books, bookName,bookPrice, bookAuthor, bookGenre
- 
+
 const bookModel = (sequelize,DataTypes)=>{
     const Book = sequelize.define("book",{
        bookName : {
@@ -17,7 +18,7 @@ const bookModel = (sequelize,DataTypes)=>{
            type : DataTypes.STRING
        }
     })
-    console.log("Call vayo book Model")
+   
     return Book
 }
 module.exports = bookModel // export default bookModel
